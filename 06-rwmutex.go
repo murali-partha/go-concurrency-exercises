@@ -27,7 +27,7 @@ func main() {
 		sMessage.mu.RLock()
 		defer sMessage.mu.RUnlock()
 		time.Sleep(time.Millisecond * 500)
-		fmt.Printf("Ducati is a%s car\n", sMessage.message)
+		fmt.Printf("Ducati is a%s bike\n", sMessage.message)
 	}
 
 	updateMessage := func() {

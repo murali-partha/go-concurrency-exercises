@@ -12,7 +12,7 @@ func main() {
 	wg.Add(1)
 
 	go func() {
-		count("hello", 5)
+		count("hello", 15)
 		wg.Done()
 	}()
 	count("world", 3)
