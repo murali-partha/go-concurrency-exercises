@@ -12,8 +12,8 @@ func main() {
 	wg.Add(1)
 
 	go func() {
-		count("hello", 5)
-		wg.Done()
+		defer wg.Done()
+		count("hello", 15)
 	}()
 	count("world", 3)
 	wg.Wait()
